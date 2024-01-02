@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#120625"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:translationY="20dp">
+
+
+        <TextView
+            android:id="@+id/tverror2"
+            android:layout_width="363dp"
+            android:layout_height="33dp"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="78dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edtcoins"
+                style="@android:style/Widget.EditText"
+                android:layout_width="wrap_content"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:ems="10"
+                android:hint="Enter Amount"
+                android:textColorHint="#FFFFFF"
+                android:inputType="numberDecimal"
+                android:textColor="#FFFFFF" />
+
+            <Spinner
+                android:id="@+id/spinner"
+                style="@style/Widget.AppCompat.Light.Spinner.DropDown.ActionBar"
+                android:layout_width="135dp"
+                android:layout_height="65dp"
+                android:layout_weight="1"
+                android:background="#CC4747"
+                android:backgroundTint="#5E2323"
+                android:dropDownSelector="@android:drawable/btn_dropdown"
+                android:popupBackground="@color/white"
+                android:scrollbarStyle="insideOverlay"
+                android:spinnerMode="dropdown"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="USD :"
+                style="@style/coins" />
+
+            <EditText
+                android:id="@+id/edtUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EUR :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NIS :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtNIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EGP :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtEGP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JOD :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="82dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btConverter"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FF5733"
+                android:elevation="4dp"
+                android:text="Converter"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                app:icon="@android:drawable/ic_popup_sync"
+                app:iconGravity="textStart"
+                app:iconSize="28dp"
+                app:iconTint="#540000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="359dp"
+            android:layout_height="86dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btback"
+                style="@style/Widget.Material3.ExtendedFloatingActionButton.Icon.Tertiary"
+                android:layout_width="28dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#C8A9A9"
+                android:text="Back"
+                app:icon="@android:drawable/ic_menu_revert"
+                app:iconGravity="textStart"
+                app:iconSize="28dp" />
+
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

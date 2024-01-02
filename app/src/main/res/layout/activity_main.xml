@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#120625"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/Linear"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:textAlignment="center"
+        android:translationY="20dp">
+
+        <Button
+            android:id="@+id/btLogout"
+            style="@style/bt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log out"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconSize="24dp" />
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:background="#540000"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="340dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="Coins"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView12"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="USD :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtUSD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:text="1"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView9"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EUR :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtEUR"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView8"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="NIS :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtNIS"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView10"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="EGP :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtEGP"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView11"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="JOD :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtJOD"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:editable="false"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btConverter"
+                style="@style/bt"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="Currency Converter"
+                app:icon="@android:drawable/arrow_down_float"
+                app:iconTint="#540000" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:background="#001C0707"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="#540000"
+                android:gravity="center"
+                android:text="Crypto"
+                android:textAlignment="center"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp"
+                android:translationY="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView13"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="BTC :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtBTC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="360dp"
+            android:layout_height="65dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/textView14"
+                style="@style/coins"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="ETH :"
+                android:textColor="#FFFFFF"
+                android:textSize="24sp" />
+
+            <EditText
+                android:id="@+id/edtETH"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:ems="10"
+                android:enabled="false"
+                android:inputType="numberDecimal"
+                android:textColor="#FF0000" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="coins">
+        <item name="android:layout_weight">1</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="bt" parent="Widget.MaterialComponents.Button.OutlinedButton">
+        <item name="android:backgroundTint">#FF5733</item>
+        <item name="android:elevation">4dp</item>
+        <item name="android:textColor">#FFFFFF</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="icon">
+        <item name="android:layout_width">100dp</item>
+        <item name="android:layout_height">100dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:translationY">50dp</item>
+    </style>
+</resources>
